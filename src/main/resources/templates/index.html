@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>Jenkins CI/CD Demo</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="header">
+
+<h1>Jenkins CI/CD Training Application</h1>
+
+</div>
+
+<br>
+
+<p class="status">
+
+𐏢 Application Running
+
+</p>
+
+<table>
+
+<tr>
+
+<td>Application</td>
+
+<td th:text="${build.applicationName}"></td>
+
+</tr>
+
+<tr>
+
+<td>Version</td>
+
+<td th:text="${build.version}"></td>
+
+</tr>
+
+<tr>
+
+<td>Environment</td>
+
+<td th:text="${build.environment}"></td>
+
+</tr>
+
+<tr>
+
+<td>Build Number</td>
+
+<td th:text="${build.buildNumber}"></td>
+
+</tr>
+
+<tr>
+
+<td>Hostname</td>
+
+<td th:text="${hostname}"></td>
+
+</tr>
+
+<tr>
+
+<td>IP Address</td>
+
+<td th:text="${ipaddress}"></td>
+
+</tr>
+
+<tr>
+
+<td>Operating System</td>
+
+<td th:text="${operatingSystem}"></td>
+
+</tr>
+
+<tr>
+
+<td>Java Version</td>
+
+<td th:text="${javaVersion}"></td>
+
+</tr>
+
+<tr>
+
+<td>Processors</td>
+
+<td th:text="${processors}"></td>
+
+</tr>
+
+<tr>
+
+<td>Maximum Memory (MB)</td>
+
+<td th:text="${memory}"></td>
+
+</tr>
+
+<tr>
+
+<td>Current Time</td>
+
+<td th:text="${currentTime}"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
